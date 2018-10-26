@@ -1,0 +1,210 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Sans-serif;
+  background: #2c3e50;
+}
+header{
+      width: 100%;
+      height: 100vh;
+      background-color: rgba(6, 59, 139, 0.664);
+      background-size: cover;
+}
+
+
+
+#for{
+  width: 300px;
+  margin: 0 auto;
+
+}
+#fie{
+  display: inline-block;
+  background: #fff;
+  border: 1px solid #333;
+  border-radius: 5px;
+  padding: 0 0 0 10px;
+
+}
+#in, #but{
+  position: relative;
+  float: left;
+  width:  170px;
+  height: 40px;
+  padding: 0;
+  z-index: 2;
+}
+#in{
+  color: #666;
+  border: none;
+}
+#but{
+  font-size:1.4em;
+  width: 40px;
+  border: none;
+  background: #333;
+  transform: translate(-50px,0);
+   transition-duration: .3s; 
+
+}
+#fa-search{
+  color: #bbb;
+  transform: translate(-190,0);
+  transition: all .1s ease-in-out;
+
+}
+#in:focus{
+  outline: none;
+}
+#in:focus + #but{
+  transform:  translate(0,0);
+  transition-duration: .3s; 
+}
+#in:focus + #but .fa{
+  color: #fff;
+  transform:  translate(0,0);
+  transition-duration: .4s; 
+}
+
+#wrap {
+  margin: 0 auto 1000px;
+}
+
+#regbar {
+  height: 67px;
+  background: #34495e;
+}
+
+#navthing {
+  margin-left: 50px;
+}
+
+h2 {
+  padding: 20px;
+  color: #ecf0f1;
+}
+
+fieldset {
+  border: none;
+}
+
+.login {
+  position: relative;
+  width: 350px;
+  display: none;
+}
+
+.arrow-up {
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 15px solid #ECF0F1;
+  left: 10%;
+  position: absolute;
+  top: -10px;
+}
+.r{
+  font-size: 20px;
+}
+.formholder {
+  background: rgb(255,255,255)    ;
+  width: 340px;
+  border-radius: 5px;
+  padding-top: 5px;
+}
+.formholder input[type="email"], .formholder input[type="password"] {
+  padding: 7px 5px;
+  margin: 10px 0;
+  width: 100%;
+  display: block;
+  font-size: 18px;
+  border-radius: 5px;
+  border: none;
+  -webkit-transition: 0.3s linear;
+  -moz-transition: 0.3s linear;
+  -o-transition: 0.3s linear;
+  transition: 0.3s linear;
+}
+.formholder input[type="email"]:focus, .formholder input[type="password"]:focus {
+  outline: none;
+  box-shadow: 0 0 1px 1px ;
+}
+.formholder input[type="submit"] {
+  background:#343a40;
+  padding: 10px;
+  font-size: 20px;
+  display: block;
+  width: 100%;
+  border: none;
+  color: #ffffff;
+  border-radius: 5px;
+}
+.formholder input[type="submit"]:hover {
+  
+}
+
+.randompad {
+  padding: 10px;
+}
+
+.green {
+  color: #757D7E  ;
+}
+
+a {
+  color: #ecf0f1;
+  text-decoration: none;
+}
+a:hover {
+  color: #1abc9c;
+}
+#tab{
+  background: #fff;
+}
+#th{
+  background: #C9CACA  ;
+}
+.button {
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 12px;
+  padding: 8px;
+  width: 90px;
+  transition: all 0.3s;
+  cursor: pointer;
+  margin: none;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: -1px;
+  right: -15px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
